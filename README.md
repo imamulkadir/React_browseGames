@@ -49,7 +49,7 @@ A React application built with Vite that fetches and displays free-to-play game 
 
 ## Project Structure
 
-    ```text
+    ```
     React_browseGames/
     ├── public/                # Static assets
     ├── src/
