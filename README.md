@@ -29,15 +29,15 @@ A React application built with Vite that fetches and displays free-to-play game 
 
 2. Install dependencies:
 
-```bash
-npm install
-```
+   ```bash
+   npm install
+   ```
 
 3. Start the development server:
 
-```bash
-npm run dev
-```
+   ```bash
+   npm run dev
+   ```
 
 4. Visit the local app at _http://localhost:5173_
 
@@ -49,23 +49,23 @@ npm run dev
 
 ## Project Structure
 
-```text
-React_browseGames/
-├── public/                # Static assets
-├── src/
-│   ├── components/        # React UI components
-│   │   └── GetGames.jsx
-│   ├── services/
-│   │   └── api.js         # Fetch logic
-│   ├── styles/
-│   │   └── GetGames.css   # Component-specific CSS
-│   ├── App.jsx
-│   └── main.jsx
-├── index.html
-├── package.json
-├── vite.config.js
-└── README.md              # Project overview
-```
+    ```text
+    React_browseGames/
+    ├── public/                # Static assets
+    ├── src/
+    │   ├── components/        # React UI components
+    │   │   └── GetGames.jsx
+    │   ├── services/
+    │   │   └── api.js         # Fetch logic
+    │   ├── styles/
+    │   │   └── GetGames.css   # Component-specific CSS
+    │   ├── App.jsx
+    │   └── main.jsx
+    ├── index.html
+    ├── package.json
+    ├── vite.config.js
+    └── README.md              # Project overview
+    ```
 
 ## License
 
