@@ -1,0 +1,141 @@
+.games-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-family: cursive;
+}
+
+.game-card {
+  width: 300px;
+  height: 290px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.game-card:hover {
+  transform: scale(1.05); /* Slightly enlarge */
+}
+
+.thumbnail-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.game-thumbnail {
+  width: 100%;
+  display: block;
+}
+
+.release-year {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  user-select: none;
+}
+
+.game-info {
+  padding: 12px;
+  flex-grow: 1;
+}
+
+.game-title {
+  color: #ccc;
+  margin: 0 0 8px 0;
+  font-size: 18px;
+}
+
+.game-description {
+  margin: 0;
+  color: #6e6d6d;
+  font-size: 14px;
+}
+.load-more-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.load-more-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #27373d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.load-more-btn:hover {
+  background-color: #005ea3;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+}
+
+.modal-thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  color: #ccc;
+  background: #333;
+  border: none;
+  border-radius: 8px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  color: #333;
+  background: #ccc;
+}
+
+.modal-description {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.modal-release-year {
+  color: gray;
+  font-size: 14px;
+}
