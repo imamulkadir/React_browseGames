@@ -1,5 +1,5 @@
 const API_URL =
-  "https://browse-games.vercel.app/https://www.freetogame.com/api/games";
+  "https://cors-anywhere.herokuapp.com/https://www.freetogame.com/api/games";
 
 export async function getAllGames() {
   try {
