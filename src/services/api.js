@@ -1,5 +1,4 @@
-const API_URL =
-  "https://cors-anywhere.herokuapp.com/https://www.freetogame.com/api/games";
+const API_URL = "./games"; // No need for external proxy now
 
 export async function getAllGames() {
   try {
@@ -9,7 +8,6 @@ export async function getAllGames() {
 
     const data = await response.json();
 
-    // Map over the array and extract needed fields
     return data.map((game) => ({
       id: game.id || "",
       title: game.title || "",
@@ -19,12 +17,6 @@ export async function getAllGames() {
     }));
   } catch (error) {
     console.log("Error fetching games: ", error);
-    return {
-      id: "",
-      title: "",
-      thumbnail: "",
-      description: "",
-      release_date: "",
-    };
+    return [];
   }
 }
