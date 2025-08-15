@@ -1,4 +1,4 @@
-const API_URL = "/api/games"; // This now points to your backend
+const API_URL = "../../api/game"; // This now points to your backend
 
 export async function getAllGames() {
   try {
