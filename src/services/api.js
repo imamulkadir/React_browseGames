@@ -1,13 +1,11 @@
-const API_URL = "./games"; // No need for external proxy now
+const API_URL = "/api/games"; // This now points to your backend
 
 export async function getAllGames() {
   try {
     const response = await fetch(API_URL);
-
     if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
 
     const data = await response.json();
-
     return data.map((game) => ({
       id: game.id || "",
       title: game.title || "",
